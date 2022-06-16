@@ -10,8 +10,8 @@ import pymysql.cursors
 port_num = 22
 with SSHTunnelForwarder(
     ('', port_num),
-    ssh_username='ssugahara',
-    ssh_password='light',
+    ssh_username='username',
+    ssh_password='password',
     ssh_pkey='',
     remote_bind_address=('', 3306)
 ) as server:
